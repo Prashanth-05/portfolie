@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolie</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+        <img src="images/logo.svg" alt="23andfour" class="logo">
+          <nav>
+            <a href="#" class="hide-desktop">
+                <img src="images/ham.svg" alt="toggle" class="menu" id="menu">
+            </a>
+              <ul class="show-desktop hide-mobile" id="nav">
+                <li id="exit" class="exit-btn hide-desktop"><img src="images/exit.svg" alt="exit menu"></li>
+                <li><a href="#">home</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">About me</a></li>
+                <li><a href="#">contacts</a></li>
+              </ul>
+          </nav>
+        </header>
+
+        <section>
+            <img src="images/server.svg" alt="severgraphic" class="server">
+            <h2>Hi i'm Prashanth kumar L</h2>
+            <p class="subhead">I am a front end developer </p>
+            <img src="images/scroll.svg" alt="scroll-down" class="scroll hide-mobile show-desktop">
+        </section>
+    </div>
+    <div class="blue-container">
+        <div class="container">
+            <ul>
+                <li> 
+                    <img src="images/icon-1.svg" alt="calender-icon">
+                    <p> hello i am learning front end developing</p>
+                </li>
+                <li> 
+                    <img src="images/icon-2.svg" alt="calender-icon">
+                    <p> hello i am learning front end developing</p>
+                </li>
+                <li> 
+                    <img src="images/icon-3.svg" alt="calender-icon">
+                    <p> hello i am learning front end developing</p>
+                </li>
+            </ul>
+            
+        </div>
+    </div>
+
+    <div class="grey-container">
+
+        <div class="container">
+            <ul>
+                <li>
+                    <img src="images/user2.png" alt="user picture">
+                    <blockquote> hello i am an developer </blockquote>
+                    <figcaption>-prashanth</figcaption>
+                </li>
+                <li>
+                    <img src="images/user1.png" alt="user picture">
+                    <blockquote> hello i am an developer </blockquote>
+                    <figcaption>-prash</figcaption>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="container">
+        <h2> started studying front end developing</h2>
+        <a  href="#" class="cta ">get started</a>
+    </div>
+    
+    
+    <footer >
+        <div class="footer-container">
+            <div class="container">
+                <img src="images/logo.svg" alt="logo" class="logo">
+                <p class="address"> mysore, 570022<br>India</p>
+                <ul class="footer-links">
+                    <li>
+                        <a href="#">terms and condition</a><br>
+                    </li>
+                    <li><a href="#">privacy & policy</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </footer>
+
+    <script>
+        var menu = document.getElementById('menu');
+        var nav = document.getElementById('nav');
+        var exit =document.getElementById('exit');
+
+        menu.addEventListener('click',function(e){
+            nav.classList.toggle('hide-mobile');
+            e.preventDefault();
+        });
+        exit.addEventListener('click',function(e){
+            nav.classList.toggle('hide-mobile');
+            e.preventDefault();
+        });
+    </script>
+    
+</body>
+</html>
